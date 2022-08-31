@@ -11,29 +11,55 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+This package provides Column and Row Widgets with Content Padding.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Column with Content Padding
+- Row with Content Padding
 
-## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## Example
+![image](https://imgur.com/HmtfdPP.png)
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+TODO: Add package in **Pubspec.yaml** file.
 
-```dart
-const like = 'sample';
 ```
 
-## Additional information
+dependencies:
+  padding_column_row_widget:
+  
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+```
+
+- Column widget with Padding
+```
+ColumnWithPadding(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 20,horizontal: 20),
+                  children:[
+                    const Text("Only with contentPadding Column Widget"),
+                    const Text("Hello this is text"),
+                  ],
+                ).build(context)
+```
+**NOTE**:Column Widget Vertical padding either from top or bottom only will be added if mainAxisAlignment is not MainAxisAlignment.spaceBetween, MainAxisAlignment.spaceAround,MainAxisAlignment.spaceEvenly but horizontal padding will be added to childrens.
+
+- Row widget with Padding
+```
+RowWithPadding(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 20,horizontal: 20),
+                  children:[
+                    const Text("Only with contentPadding Column Widget"),
+                    const Text("Hello this is text"),
+                  ],
+                ).build(context)
+```
+**NOTE**:Column Widget Horizontal padding either from left or right only will be added if mainAxisAlignment is not MainAxisAlignment.spaceBetween, MainAxisAlignment.spaceAround,MainAxisAlignment.spaceEvenly but vertical padding will be added to childrens.
+
+## Contribution
+
+make a clone and start contributing.
+
+
