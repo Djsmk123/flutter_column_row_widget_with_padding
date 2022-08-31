@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
                     color: Colors.red,
                     borderRadius: BorderRadius.circular(16)
                 ),
-                child:RowWithPadding(
+                child:ColumnWithPadding(
                   contentPadding: const EdgeInsets.symmetric(vertical: 20,horizontal: 20),
                   children:[
                     const Text("Only with contentPadding Column Widget"),
